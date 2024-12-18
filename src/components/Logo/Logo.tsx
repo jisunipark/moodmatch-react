@@ -1,4 +1,4 @@
-import LogoIcon from './Icons/LogoIcon';
+import LogoIcon from '../Icons/LogoIcon';
 import * as S from './style';
 
 export default function Logo() {
