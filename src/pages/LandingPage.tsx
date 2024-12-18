@@ -1,9 +1,9 @@
-import Logo from '../components/Logo/Logo';
+import Gnb from '../components/Gnb/Gnb';
 
 export default function LandingPage() {
   return (
     <div>
-      <Logo />
+      <Gnb />
     </div>
   );
 }
