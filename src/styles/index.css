@@ -12,3 +12,8 @@ a:hover,
 a:active {
   text-decoration: none;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+}

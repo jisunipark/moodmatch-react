@@ -6,5 +6,9 @@ interface Props {
 }
 
 export default function Button({ children, width }: Props) {
-  return <S.Button width={width}>{children}</S.Button>;
+  return (
+    <S.Button type="button" width={width}>
+      {children}
+    </S.Button>
+  );
 }
