@@ -15,5 +15,4 @@ export const Image = styled.img`
   height: 508px;
   border-radius: 28px;
   border: 1.5px solid rgba(110, 80, 73, 0);
-  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 `;
