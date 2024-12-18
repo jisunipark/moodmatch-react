@@ -2,3 +2,13 @@
   background-color: #0d0402;
   font-family: 'Plus Jakarta Sans';
 }
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
