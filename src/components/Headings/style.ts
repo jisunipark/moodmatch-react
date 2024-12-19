@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { darkText } from '../../styles/colors';
+import { darkText, primary } from '../../styles/colors';
 
 export const H1 = styled.h1`
   color: ${darkText};
@@ -21,6 +21,10 @@ export const H2 = styled.h2`
   font-weight: 700;
   line-height: 120px; /* 107.143% */
   letter-spacing: -2.8px;
+
+  span {
+    color: ${primary};
+  }
 `;
 
 export const H3 = styled.h3`

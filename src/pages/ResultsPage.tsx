@@ -1,3 +1,12 @@
+import Gnb from '../components/Gnb/Gnb';
+import ResultCity from '../components/ResultCity/ResultCity';
+import { Page } from '../styles/page';
+
 export default function ResultsPage() {
-  return <div>results</div>;
+  return (
+    <Page>
+      <Gnb />
+      <ResultCity />
+    </Page>
+  );
 }
