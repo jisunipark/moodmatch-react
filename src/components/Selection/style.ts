@@ -11,9 +11,27 @@ export const Wrapper = styled.section`
   align-self: stretch;
 `;
 
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`;
+
+export const Direction = styled.span`
+  color: ${darkText};
+  text-align: center;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 213.333% */
+`;
+
 export const OptionWrapper = styled.div`
   display: flex;
-  width: 600px;
+  width: 720px;
   padding: 14px 0px;
   justify-content: center;
   align-items: center;
