@@ -1,18 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
-import ResultsPage from './pages/ResultsPage';
-import TastePage from './pages/TastePage';
+import PersonalityPage from './pages/PersonalityPage';
 import ValuesPage from './pages/ValuesPage';
-import CharacterPage from './pages/CharacterPage';
+import PreferencesPage from './pages/PreferencesPage';
+import ResultsPage from './pages/ResultsPage';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/character" element={<CharacterPage />} />
+        <Route path="/personality" element={<PersonalityPage />} />
         <Route path="/values" element={<ValuesPage />} />
-        <Route path="/taste" element={<TastePage />} />
+        <Route path="/preferences" element={<PreferencesPage />} />
         <Route path="/results" element={<ResultsPage />} />
       </Routes>
     </BrowserRouter>

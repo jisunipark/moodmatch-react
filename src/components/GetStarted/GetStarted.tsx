@@ -8,7 +8,7 @@ export default function GetStarted() {
     <S.Wrapper>
       <H3>Get Started with MoodMatch</H3>
       <S.Text>Select your traits and find your ideal city</S.Text>
-      <Link to={'/character'}>
+      <Link to={'/personality'}>
         <Button width="short">Get Started</Button>
       </Link>
     </S.Wrapper>

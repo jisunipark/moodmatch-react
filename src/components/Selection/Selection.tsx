@@ -2,6 +2,7 @@ import * as S from './style';
 import Button from '../Button/Button';
 import { H5 } from '../Headings/style';
 import { PAGE_OPTIONS } from './data';
+import { Link } from 'react-router-dom';
 
 interface Props {
   page: 'personality' | 'values' | 'preferences';
@@ -16,12 +17,14 @@ export default function Selection({ page }: Props) {
       </S.TextWrapper>
       <S.OptionWrapper>
         {PAGE_OPTIONS[page].list.map((p) => (
-          <S.Option type="button" clicked={false}>
+          <S.Option type="button" clicked={false} key={p}>
             {p}
           </S.Option>
         ))}
       </S.OptionWrapper>
-      <Button width="long">Next</Button>
+      <Link to={`/${PAGE_OPTIONS[page].next}`}>
+        <Button width="long">Next</Button>
+      </Link>
       <S.SkipButton>Skip</S.SkipButton>
     </S.Wrapper>
   );

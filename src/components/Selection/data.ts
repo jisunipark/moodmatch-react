@@ -102,15 +102,18 @@ export const PAGE_OPTIONS = {
     list: personality,
     question: 'Who are you at your core?',
     direction: 'Choose up to 5 traits that best describe your personality.',
+    next: 'values',
   },
   values: {
     list: values,
     question: 'What drives you forward?',
     direction: 'Choose up to 5 values that guide your life and decisions.',
+    next: 'preferences',
   },
   preferences: {
     list: preferences,
     question: 'What do you love most?',
     direction: 'Choose up to 5 styles or tastes that reflect your preferences.',
+    next: 'results',
   },
 };
