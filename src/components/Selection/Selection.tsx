@@ -17,7 +17,9 @@ export default function Selection({ page }: Props) {
       </H5>
       <S.OptionWrapper>
         {PAGE_OPTIONS[page].map((p) => (
-          <S.Option type="button">{p}</S.Option>
+          <S.Option type="button" clicked={false}>
+            {p}
+          </S.Option>
         ))}
       </S.OptionWrapper>
       <Button width="long">Next</Button>
