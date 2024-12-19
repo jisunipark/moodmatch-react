@@ -6,7 +6,7 @@ export default function CharacterPage() {
   return (
     <Page>
       <Gnb />
-      <Selection />
+      <Selection page="personality" />
     </Page>
   );
 }

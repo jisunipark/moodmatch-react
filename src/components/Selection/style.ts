@@ -11,7 +11,18 @@ export const Wrapper = styled.section`
   align-self: stretch;
 `;
 
-export const Trait = styled.button`
+export const OptionWrapper = styled.div`
+  display: flex;
+  width: 600px;
+  padding: 14px 0px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+`;
+
+export const Option = styled.button`
   display: flex;
   padding: 10px 20px;
   justify-content: center;
@@ -26,6 +37,8 @@ export const Trait = styled.button`
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 133.333% */
+
+  cursor: pointer;
 `;
 
 export const SkipButton = styled.button`

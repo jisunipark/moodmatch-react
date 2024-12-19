@@ -1,8 +1,13 @@
+import * as S from './style';
 import Button from '../Button/Button';
 import { H5 } from '../Headings/style';
-import * as S from './style';
+import { PAGE_OPTIONS } from './data';
 
-export default function Selection() {
+interface Props {
+  page: 'personality' | 'values' | 'preferences';
+}
+
+export default function Selection({ page }: Props) {
   return (
     <S.Wrapper>
       <H5>
@@ -10,7 +15,11 @@ export default function Selection() {
         <br />
         describe you best:
       </H5>
-      <S.Trait type="button">Genorous</S.Trait>
+      <S.OptionWrapper>
+        {PAGE_OPTIONS[page].map((p) => (
+          <S.Option type="button">{p}</S.Option>
+        ))}
+      </S.OptionWrapper>
       <Button width="long">Next</Button>
       <S.SkipButton>Skip</S.SkipButton>
     </S.Wrapper>
